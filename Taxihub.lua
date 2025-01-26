@@ -146,6 +146,97 @@ end
    end,
 })
 
+local TPTab = Window:CreateTab("💨 Teleports", nil) -- Title, Image
+local Section = TPTab:CreateSection("Choose your destination: ")
+
+local Button = TPTab:CreateButton({
+   Name = "🛠️ Car Parts Shop",
+   Callback = function()
+   -- Teleport the player to the target position and rotation
+local targetCFrame = CFrame.new(
+    1221.54028, 7.41136169, 717.67334, -- Position
+    0.375850379, -0.000743060897, 0.926680088, -- Rotation (right vector)
+    -7.09571395e-05, 0.999999702, 0.00083063182, -- Rotation (up vector)
+    -0.926680446, -0.000377947843, 0.375850171 -- Rotation (back vector)
+)
+
+-- Get the player's character and teleport them
+local player = game.Players.LocalPlayer
+if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+    player.Character.HumanoidRootPart.CFrame = targetCFrame
+else
+    warn("Could not teleport the player!")
+end
+
+   end,
+})
+
+local Button = TPTab:CreateButton({
+   Name = "🏆 Race Club",
+   Callback = function()
+   -- Teleport the player to the new target position and rotation
+local targetCFrame = CFrame.new(
+    -1466.6272, 27.07967, 67.041748, -- Position
+    -0.0831320584, -0.00223316043, 0.996535957, -- Rotation (right vector)
+    -0.00010915818, 0.999997497, 0.00223181141, -- Rotation (up vector)
+    -0.996538579, 7.67550227e-05, -0.0831320882 -- Rotation (back vector)
+)
+
+-- Get the player's character and teleport them
+local player = game.Players.LocalPlayer
+if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+    player.Character.HumanoidRootPart.CFrame = targetCFrame
+else
+    warn("Could not teleport the player!")
+end
+
+   end,
+})
+
+local Button = TPTab:CreateButton({
+   Name = "🏭 Industrial District",
+   Callback = function()
+   -- Teleport the player to the new target position and rotation
+local targetCFrame = CFrame.new(
+    1770.75195, 7.36749077, 3349.38721, -- Position
+    -0.134718999, 0.00547026331, -0.990868747, -- Rotation (right vector)
+    0.00523901964, 0.999974728, 0.00480823452, -- Rotation (up vector)
+    0.990870059, -0.00454341946, -0.134744287 -- Rotation (back vector)
+)
+
+-- Get the player's character and teleport them
+local player = game.Players.LocalPlayer
+if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+    player.Character.HumanoidRootPart.CFrame = targetCFrame
+else
+    warn("Could not teleport the player!")
+end
+
+   end,
+})
+
+local Button = TPTab:CreateButton({
+   Name = "🏗️ Construction Site",
+   Callback = function()
+   -- Teleport the player to the final target position and rotation
+local targetCFrame = CFrame.new(
+    1031.09827, 39.1122894, 2064.3252, -- Position
+    -0.87253952, 0.00117474969, -0.488542169, -- Rotation (right vector)
+    7.30842512e-05, 0.999997437, 0.00227406784, -- Rotation (up vector)
+    0.48854357, 0.00194850902, -0.872537374 -- Rotation (back vector)
+)
+
+-- Get the player's character and teleport them
+local player = game.Players.LocalPlayer
+if player and player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+    player.Character.HumanoidRootPart.CFrame = targetCFrame
+else
+    warn("Could not teleport the player!")
+end
+
+   end,
+})
+
 local CreditsTab = Window:CreateTab("💳 Credits", nil) -- Title, Image
 local Section = CreditsTab:CreateSection("--Credits--")
 local Label = CreditsTab:CreateLabel("Whole Thing: Wasi", nil, Color3.fromRGB(35, 35, 35), false) -- Title, Icon, Color, IgnoreTheme
