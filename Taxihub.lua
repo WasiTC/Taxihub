@@ -146,6 +146,173 @@ end
    end,
 })
 
+local BlackTab = Window:CreateTab("⚫️ Black Market", nil) -- Title, Image
+local Paragraph = BlackTab:CreateParagraph({Title = "⚠️ NOTE ⚠️: ", Content = "You can only buy off-stock car parts so if a part is already in stock you need to buy it from the car parts shop and if the buttons stop working rejoin and re-execute to make them work again. If it still does not work then wait for the car parts shop to reset then try again."})
+local Section = BlackTab:CreateSection("💨 Turbos: ")
+
+local Button = BlackTab:CreateButton({
+   Name = "Hyper Turbo",
+   Callback = function()
+   local args = {
+    [1] = "hyperTurbo"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+
+   end,
+})
+
+local Button = BlackTab:CreateButton({
+   Name = "Race Turbo",
+   Callback = function()
+   local args = {
+    [1] = "raceTurbo"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+   end,
+})
+
+local Button = BlackTab:CreateButton({
+   Name = "Street Turbo",
+   Callback = function()
+   local args = {
+    [1] = "streetTurbo"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+
+   end,
+})
+
+local Button = BlackTab:CreateButton({
+   Name = "Basic Turbo",
+   Callback = function()
+   local args = {
+    [1] = "basicTurbo"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+
+   end,
+})
+
+local Section = BlackTab:CreateSection("🪈 Pipes: ")
+
+local Button = BlackTab:CreateButton({
+   Name = "Aluminium Pipe",
+   Callback = function()
+   local args = {
+    [1] = "aluPipe"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+
+   end,
+})
+
+local Button = BlackTab:CreateButton({
+   Name = "Titanium Pipe",
+   Callback = function()
+   local args = {
+    [1] = "titaniumPipe"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+
+   end,
+})
+
+local Button = BlackTab:CreateButton({
+   Name = "Metal Pipe",
+   Callback = function()
+   local args = {
+    [1] = "metalPipe"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+
+   end,
+})
+
+local Section = BlackTab:CreateSection("⚙️ Gears: ")
+
+local Button = BlackTab:CreateButton({
+   Name = "Race Gears",
+   Callback = function()
+   local args = {
+    [1] = "raceGears"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+
+   end,
+})
+
+local Button = BlackTab:CreateButton({
+   Name = "Gears",
+   Callback = function()
+   local args = {
+    [1] = "gears"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+
+   end,
+})
+
+local Section = BlackTab:CreateSection("💻 Computer Parts: ")
+
+local Button = BlackTab:CreateButton({
+   Name = "Monitor",
+   Callback = function()
+   local args = {
+    [1] = "monitor"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+
+   end,
+})
+
+local Button = BlackTab:CreateButton({
+   Name = "Motherboard",
+   Callback = function()
+   local args = {
+    [1] = "motherboard"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+
+   end,
+})
+
+local Section = BlackTab:CreateSection("🌀 Springs: ")
+
+local Button = BlackTab:CreateButton({
+   Name = "Race Spring",
+   Callback = function()
+   local args = {
+    [1] = "raceSpring"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+
+   end,
+})
+
+local Button = BlackTab:CreateButton({
+   Name = "Spring",
+   Callback = function()
+   local args = {
+    [1] = "spring"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
+
+   end,
+})
+
 local TPTab = Window:CreateTab("💨 Teleports", nil) -- Title, Image
 local Section = TPTab:CreateSection("Choose your destination: ")
 
