@@ -189,7 +189,7 @@ local Button = BlackTab:CreateButton({
    Name = "Basic Turbo",
    Callback = function()
    local args = {
-    [1] = "basicTurbo"
+    [1] = "turbo"
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("DataStore"):WaitForChild("BuyItem"):InvokeServer(unpack(args))
